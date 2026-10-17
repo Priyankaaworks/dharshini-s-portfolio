@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-script: 'Caveat', cursive;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    --color-cream: #FCF8F3;
+    --color-cream-card: #FFFFFF;
+    --color-terracotta: #D88C76;
+    --color-terracotta-dark: #C67862;
+    --color-sage: #8A9678;
+    --color-charcoal: #292720;
+    --color-charcoal-muted: #5F5A50;
+    --color-beige: #E9E1D5;
+    --color-border: #E8DFD3;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-cream);
+    color: var(--color-charcoal);
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-script {
+    font-family: var(--font-script);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FCF8F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5DDD4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D88C76;
+}
+
+/* Subtle print styles for resume page */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
