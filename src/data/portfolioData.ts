@@ -71,7 +71,7 @@ export const portfolioConfig = {
 
   // Social links
   social: {
-    github: "https://github.com",
+    github: "https://github.com/Priyankaaworks",
     linkedin: "https://www.linkedin.com/in/dharshini-b-48bb0a413?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     email: "mailto:dharshini9847@gmail.com",
     phone: "tel:8807639507",
